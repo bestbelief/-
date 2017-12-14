@@ -6,7 +6,9 @@ public class WeGame {
     final static int DIFFICULTY =1;
     final static int MODERATE =2;
     final static int SIMPLE =3;
-    public static void main(String[] args) throws InterruptedException {
+    public static void main() throws InterruptedException {
+
+
         Scanner input =new Scanner(System.in);
         System.out.println("请选择游戏等级：1困难 2适中 3简单");
        int   choice =input.nextInt();

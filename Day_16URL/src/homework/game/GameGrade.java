@@ -25,10 +25,11 @@ public class GameGrade {
                 Thread.sleep(500);
                 System.out.print(number);
                 Thread.sleep(500);
-                System.out.print(ch);
+                System.out.println(ch);
                 Scanner input = new Scanner(System.in);
-                String  st   =input.nextLine();
-                if(st.equals(rande+number+ch)){
+                String st = input.nextLine();
+
+                if(st.equals(rande+""+number+""+ch+"")){
                     System.out.println("恭喜你，闯关成功！");
                 }else {
                     System.out.println("闯关失败，欢迎再战！");
@@ -46,7 +47,7 @@ public class GameGrade {
                           System.out.println(number);
                           Scanner input = new Scanner(System.in);
                           String st =input.nextLine();
-                          if(st.equals(ch+number)){
+                          if(st.equals(ch+""+number)){
                               System.out.println("恭喜你，闯关成功!");
                           }else {
                               System.out.println("闯关失败，欢迎再战！");
@@ -59,14 +60,16 @@ public class GameGrade {
                   Random random = new Random();
                      for (int i = 0; i <15 ; i++) {
                          int  number = random.nextInt(10);
-                         char ch =(char)(int)(Math.random()*26+'a') ;
+                         char ch =(char)(int)(Math.random()*26+'a');
                          Thread.sleep(500);
                          System.out.println(number);
                          Thread.sleep(500);
                          System.out.println(ch);
                          Scanner input = new Scanner(System.in);
                          String st = input.nextLine();
-                         if(st.equals(number+ch)){
+                         System.out.println(number+ch+"");
+                         System.out.println(st);
+                         if((number+""+ch).equals(st)){
                              System.out.println("恭喜你，闯关成功!");
                          }else {
                              System.out.println("闯关失败，欢迎再战！");

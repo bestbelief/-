@@ -41,9 +41,19 @@ import java.util.regex.Pattern;
 
                 }
             }
-             return  false;
+            return false;
+        }
+            public void passWordCheck(){
+            if(Main.passWord.length()>6&&Main.passWord.length()<14){
+                System.out.println("密码设置成功");
+            }else {
+                System.out.println("密码格式不正确");
+            }
+
+
+            }
     }
-}
+
 
 
 

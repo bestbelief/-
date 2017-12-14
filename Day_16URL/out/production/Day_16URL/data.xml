@@ -13,8 +13,20 @@
     <password/>  
     <name/> 
   </user>  
-  <user username="">
-    <password>mmm</password>
-    <name></name>
+  <user username=""> 
+    <password>mmm</password>  
+    <name/> 
+  </user>  
+  <user username=""> 
+    <password/>  
+    <name/> 
+  </user>  
+  <user username="zhangSan"> 
+    <password>666</password>  
+    <name>besty</name> 
+  </user>  
+  <user username="zhangSan">
+    <password>666</password>
+    <name>zhangsss</name>
   </user>
 </users>
