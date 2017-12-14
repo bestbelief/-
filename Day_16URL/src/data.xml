@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<users> 
+  <user username="cao"> 
+    <password>ni</password>  
+    <name>daye</name> 
+  </user>  
+  <user username="17786458829"> 
+    <password>530954924@qq.com</password>  
+    <name>aaa</name> 
+  </user>  
+  <user username=""> 
+    <password/>  
+    <name/> 
+  </user>  
+  <user username="">
+    <password>mmm</password>
+    <name></name>
+  </user>
+</users>
