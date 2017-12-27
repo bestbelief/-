@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业1</title>
+    <style type="text/css">
+        #main{
+            color:blue;
+            height: 800px ;
+            width: 600px;
+            background: wheat;
+            text-align: center;
+            position: fixed;
+            left: 400px;
+            border: solid 1px cyan;
+        }
+        #vice{
+            height: 600px;
+            width: 400px;
+            text-align: center;
+            position: fixed;
+            left: 1009px;
+            top: 8px;
+            border: solid 1px black;
+
+        }
+          #text{
+             background: black;
+              color:white;
+              width: 50px;
+              height: 50px;
+              position: relative;left: 275px
+          }
+        button{
+            width: 70px;
+            height: 50px;
+            margin: 10px;
+        }
+
+
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<div id="main">
+         <div  id="btn" align="middle" style="font-size: x-large;background: white">
+             点击设置样式
+         </div>
+                <div id="text" style="background: black;color:white;
+                         width: 50px;height: 50px;position: relative;left: 275px ">
+                   哈哈
+                </div>
+</div>
+
+<div id="vice">
+    <div >选择背景</div>
+<br><br>
+    <button id="red" style="background: red" >红色</button>
+    <button id="yellow" style="background: yellow" >黄色</button>
+    <button id="blue" style="background: blue" >蓝色</button>
+    <br><br>
+    <div>选择宽度</div>
+    <br>
+    <button id="wd1">100</button>
+    <button id="wd2">200</button>
+    <button id="wd3" >300</button>
+    <br><br>
+    <div >选择高度</div>
+    <br>
+    <button id="he1" >100</button>
+    <button id="he2" >200</button>
+    <button id="he3">300</button>
+    <br><br>
+    <button id="res">恢复</button>
+    <button id="ok">确定</button>
+
+
+
+
+
+
+</div>
+
+</body>
+<script type="text/javascript">
+    $('#red').click(function () {
+        $('#text').css({"backgroundColor":"red"})
+    })
+    $('#yellow').click(function () {
+        $('#text').css({"backgroundColor":"yellow"})
+    })
+    $('#blue').click(function () {
+        $('#text').css({"backgroundColor":"blue"})
+    })
+    $('#wd1').click(function () {
+        $('#text').css({"width":"100px","left":"225px"})
+    })
+    $('#wd2').click(function () {
+        $('#text').css({"width":"200px","left":"175px"})
+    })
+    $('#wd3').click(function () {
+        $('#text').css({"width":"300px","left":"125px"})
+    })
+    $('#he1').click(function () {
+        $('#text').css({"height":"100px"})
+    })
+    $('#he2').click(function () {
+        $('#text').css({"height":"200px"})
+    })
+    $('#he3').click(function () {
+        $('#text').css({"height":"300px"})
+    })
+    $('#ok').click(function () {
+        $('#vice').css({"visibility":"hidden"})
+    })
+    $('#res').click(function () {
+        $('#text').attr({"style":"#vice"})
+    })
+
+
+</script>
+</html>
