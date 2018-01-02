@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="day18">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="day19"/>
+    <schema id="4" parent="1" name="day21"/>
+    <schema id="5" parent="1" name="day24"/>
+    <schema id="6" parent="1" name="day27"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="test"/>
+    <schema id="10" parent="1" name="users">
+      <Visible>1</Visible>
+    </schema>
+    <table id="11" parent="2" name="dmt"/>
+    <table id="12" parent="2" name="employee"/>
+    <table id="13" parent="2" name="hw_dmt">
+      <Comment>sql第二天的作业搭配的部门表</Comment>
+    </table>
+    <table id="14" parent="2" name="hw_emp">
+      <Comment>sql第二天的作业表</Comment>
+    </table>
+    <table id="15" parent="2" name="hw_stu"/>
+    <table id="16" parent="2" name="paylevel"/>
+    <table id="17" parent="2" name="st_year"/>
+    <table id="18" parent="2" name="stu"/>
+    <table id="19" parent="2" name="student"/>
+    <table id="20" parent="2" name="teacher"/>
+    <table id="21" parent="2" name="test"/>
+    <table id="22" parent="10" name="user"/>
+    <column id="23" parent="11" name="dmtid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="11" name="dmtname">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="25" parent="11" name="location">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="26" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>dmtid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="27" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="28" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>mediumtext|0</DataType>
+    </column>
+    <column id="29" parent="12" name="job">
+      <Position>3</Position>
+      <DataType>mediumtext|0</DataType>
+    </column>
+    <column id="30" parent="12" name="managerId">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="31" parent="12" name="hiredate">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="32" parent="12" name="pay">
+      <Position>6</Position>
+      <DataType>double(8,2)|0</DataType>
+    </column>
+    <column id="33" parent="12" name="prize">
+      <Position>7</Position>
+      <DataType>double(8,2)|0</DataType>
+    </column>
+    <column id="34" parent="12" name="dmtid">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="35" parent="13" name="dmtid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="13" name="dname">
+      <Position>2</Position>
+      <DataType>char(50)|0</DataType>
+    </column>
+    <column id="37" parent="13" name="dloc">
+      <Position>3</Position>
+      <DataType>char(50)|0</DataType>
+    </column>
+    <key id="38" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>dmtid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="14" name="name">
+      <Position>2</Position>
+      <DataType>char(50)|0</DataType>
+    </column>
+    <column id="41" parent="14" name="job">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="42" parent="14" name="mgrid">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="43" parent="14" name="hiredate">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="44" parent="14" name="pay">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="45" parent="14" name="prize">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="46" parent="14" name="dmtid">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="47" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="48" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="49" parent="15" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="50" parent="15" name="gender">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="51" parent="15" name="chinese">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="52" parent="15" name="math">
+      <Position>5</Position>
+      <DataType>double(5,2)|0</DataType>
+    </column>
+    <column id="53" parent="15" name="english">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="54" parent="15" name="age">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="55" parent="16" name="level">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="56" parent="16" name="lowest">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="57" parent="16" name="heightest">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="58" parent="17" name="year">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="59" parent="17" name="年利润_百万">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="60" parent="18" name="name">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="61" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="62" parent="19" name="name">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="63" parent="19" name="gender">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="64" parent="19" name="chinese">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="65" parent="19" name="math">
+      <Position>5</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="66" parent="19" name="english">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="67" parent="19" name="age">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="68" parent="20" name="name">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="69" parent="20" name="age">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="70" parent="20" name="gender">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="71" parent="20" name="score">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="72" parent="21" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="73" parent="21" name="d">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="74" parent="21" name="fk__">
+      <ColNames>d</ColNames>
+    </index>
+    <key id="75" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="76" parent="21" name="fk__">
+      <ColNames>d</ColNames>
+      <RefSchemaName>day18</RefSchemaName>
+      <RefTableName>dmt</RefTableName>
+      <RefColNames>dmtid</RefColNames>
+    </foreign-key>
+    <column id="77" parent="22" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="78" parent="22" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="79" parent="22" name="password">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="22" name="name">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="22" name="job">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="82" parent="22" name="age">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="83" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
