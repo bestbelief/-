@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+
+    <package name="day43" extends="struts-default" >
+
+        <interceptors>
+            <interceptor name="login" class="homework.web.interceptor.LoginInterceptor" >
+                <!--<param name="excludeMethods">login</param>-->
+            </interceptor>
+
+            <interceptor-stack name="my-stack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="login"/>
+            </interceptor-stack>
+
+        </interceptors>
+        <!--<default-interceptor-ref name="my-stack"/>-->
+        <!--<default-interceptor-ref name="my-stack"/>-->
+        <global-results>
+            <result name="error">login.jsp</result>
+        </global-results>
+
+        <action name="login" class="homework.web.action.LoginAction" method="login">
+            <result name="success" >index.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+
+        <action name="query" class="homework.web.action.EmployeeAction" method="queryAll">
+            <result name="success" >all.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+
+        <action name="add" class="homework.web.action.EmployeeAction" method="add">
+            <result name="success" type="chain">query</result>
+            <result name="login">login.jsp</result>
+            <interceptor-ref name="my-stack"/>
+        </action>
+
+        <action name="queryone" class="homework.web.action.EmployeeAction" method="queryOne">
+            <result name="success">edit.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+
+        <action name="edit" class="homework.web.action.EmployeeAction" method="edit">
+            <interceptor-ref name="my-stack"/>
+            <result name="success">add.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+
+
+
+
+
+
+    </package>
+</struts>
